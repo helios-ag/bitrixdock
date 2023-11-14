@@ -17,7 +17,7 @@ console-mysql: ## Log in to the MySQL console from default user
 console-mysql-root: ## Log in to the MySQL console from "root"
 	docker-compose exec db mysql -u root --password=$(MYSQL_ROOT_PASSWORD) -A $(MYSQL_DATABASE)
 
-up: ## Up Docker-project
+start: ## Up Docker-project
 	docker-compose up -d
 
 down: ## Down Docker-project
